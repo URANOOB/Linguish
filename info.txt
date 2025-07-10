@@ -1,1 +1,1 @@
-Information
+This project is based in JS and React made to learn how to use it.
