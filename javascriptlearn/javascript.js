@@ -20,3 +20,34 @@ arrayf.forEach((value, index, array) => {
 })
 //Este imprime el valor, el indice y el array completo de cada elemento del array
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let marcas = ['Samsung', 'LG', 'Sony', 'Panasonic'];
+let televisor = {
+    marca: 'Samsung',
+    modelo: 'QLED',
+    precio: 1500000,
+    anio: 2020
+};
+
+if (marcas.includes(televisor.marca) && televisor.precio < 2000000) {
+    console.log('El televisor es barato');
+} else {
+    console.log('El televisor es caro');
+}
