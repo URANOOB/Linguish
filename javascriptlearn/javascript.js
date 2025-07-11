@@ -136,3 +136,38 @@ console.log(objectHuman.name, objectHuman.hobbies[3], objectHuman.studies.degree
 const adding = 'Status';
 objectHuman.status = 'Married';
 console.log(objectHuman);
+
+
+
+////////////////////////////////////////////////////
+//Funciones y su uso
+
+//Forma numero 1 de hacer la suma
+const sum = (a, b) => {
+    return a + b;
+}
+const data = sum(5, 10);
+console.log(data);
+
+//Forma numero 2 de hacer la suma
+function suma (d, c) {
+    return d + c;
+}
+const result = suma(15, 20);
+console.log(result);
+//Dos formas de hacer la misma suma, una con arrow function y otra con function declaration
+
+//Esta es una funcion para sacar el cuadrado del mismo numero
+const square = x =>{
+    console.log(x)
+    return 'La raiz cuadrada de ' + x + ' es igual a ' + x * x;
+}
+const squaredValue = square(4);
+console.log(squaredValue);
+
+
+const elementos3 = [6, 7, 8, 9, 10];
+
+const squaredArray = elementos3.map(p => p * p);
+console.log(squaredArray);
+
