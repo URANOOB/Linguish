@@ -20,24 +20,7 @@ arrayf.forEach((value, index, array) => {
 })
 //Este imprime el valor, el indice y el array completo de cada elemento del array
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Algoritmo para determinar si un televisor es barato o caro
 let marcas = ['Samsung', 'LG', 'Sony', 'Panasonic'];
 let televisor = {
     marca: 'Samsung',
@@ -51,3 +34,26 @@ if (marcas.includes(televisor.marca) && televisor.precio < 2000000) {
 } else {
     console.log('El televisor es caro');
 }
+
+
+//Este es un ejemplo de como se usa Concat, es preferible usarlo en vez de push para concatenar arrays. No a;ade al array
+//que ya existe, sino que crea un nuevo array con los elementos concatenados.
+const xArray = [1, 2, 3, 4, 5];
+
+const xArray2 = xArray.concat([6, 7, 8]);
+
+console.log(xArray2);
+
+
+//Este es un ejemplo de como se usa map para navegar entre arrays
+const eval = xArray2.map(value => value * 3)
+console.log(eval)
+//Este ejemplo imprime los elementos del array xArray2 multiplicados por 3
+
+const anothermap = xArray2.map(value => '<p>' + value + '</p>')
+console.log(anothermap)
+//Este ejemplo imprime los elementos del array xArray2 envueltos en etiquetas <p>
+
+const [first, second, ...rest] = xArray2
+console.log('El primer elemento del array es ' + first + ' y el segundo elemento es ' + second)  // Imprime el primer y segundo elemento del array
+console.log('El resto de los elementos del array son: ' + rest)  // Imprime el resto del array como un nuevo array
