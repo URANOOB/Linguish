@@ -45,7 +45,6 @@ const xArray2 = xArray.concat([6, 7, 8]);
 console.log(xArray2);
 
 
-//Este es un ejemplo de como se usa map para navegar entre arrays
 const eval = xArray2.map(value => value * 3)
 console.log(eval)
 //Este ejemplo imprime los elementos del array xArray2 multiplicados por 3
@@ -57,3 +56,83 @@ console.log(anothermap)
 const [first, second, ...rest] = xArray2
 console.log('El primer elemento del array es ' + first + ' y el segundo elemento es ' + second)  // Imprime el primer y segundo elemento del array
 console.log('El resto de los elementos del array son: ' + rest)  // Imprime el resto del array como un nuevo array
+
+//Este es un ejemplo de como se usa filter para filtrar elementos de un array
+const filterArray = xArray2.filter(value => value > 5)  
+console.log('Los elementos despues del value 5 son: ' + filterArray)  // Imprime un nuevo array con los elementos mayores a 5
+
+//Este es un ejemplo de como se usa find para encontrar un elemento en un array
+const findArray = xArray2.find(value => value > 5)
+console.log('El primer elemento despues del value 5 es ' + findArray)  // Imprime el primer elemento que cumple la condicion, en este caso el primer elemento mayor a 5
+
+//Este es un ejemplo de como se usa reduce para reducir un array a un solo valor
+const reduceArray = xArray2.reduce((accumulator, value) => accumulator + value, 0)
+console.log('La suma de todos los elementos del array es ' + reduceArray)  // Imprime la suma de todos los elementos del array
+
+
+///Trabajando con objetos
+//Este es un ejemplo de como se crea un objeto y se accede a sus propiedades
+const objeto1 = {
+    name: 'Juan',
+    age: 30,
+    education: {
+        degree: 'Ingeniero',
+        university: 'UNAM'
+    }
+}
+
+console.log('El titulo de ' + objeto1.name + ' es ' + objeto1.education.degree);  // Imprime el nombre del objeto
+console.log(objeto1.education.university);  // Imprime la universidad del objeto
+
+const objeto2 = {
+    name: {
+        first: 'Juan',
+        last: 'Perez'
+    },
+    grades: [9, 10, 11],
+    department: 'UNAM'
+}
+const age = 25
+
+//Practica de conocimientos en objetos
+////////////////////////////////////////
+const elementos = [1, 2, 3, 4, 5];
+const elementos2 = [6, 7, 8, 9, 10];
+
+elementos.forEach((elemento, indice) => {
+    console.log(`El elemento en el indice ${indice} es ${elemento}`)
+})
+
+const nuevoArray = elementos.concat(elementos2);
+console.log(nuevoArray);
+
+console.log(`El nuevo array tiene ${nuevoArray.length} elementos`)
+
+const mappingElements = nuevoArray.map(value => `<p>${value}</p>`)
+console.log(mappingElements);
+
+const mappingElements2 = nuevoArray.map(value => value * 2)
+console.log(mappingElements2);
+
+const [firstElement, secondElement, ...restElements] = nuevoArray;
+console.log(`El primer elemento es ${firstElement} y el segundo elemento es ${secondElement}`);
+console.log(`El resto de los elementos son: ${restElements}`);
+
+const objectHuman = {
+    name: 'Wilson',
+    age: 28,
+    gender: 'Male',
+    hobbies: ['Reading', 'Gaming', 'Traveling', 'Programming'],
+    location: 'New York',
+    studies: {
+        degree: ['Computer Science', 'Mathematics'],
+        university: 'MIT',
+        year: 2020
+    }
+}
+
+console.log(objectHuman.name, objectHuman.hobbies[3], objectHuman.studies.degree[1])
+
+const adding = 'Status';
+objectHuman.status = 'Married';
+console.log(objectHuman);
