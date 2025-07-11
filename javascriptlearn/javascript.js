@@ -171,3 +171,28 @@ const elementos3 = [6, 7, 8, 9, 10];
 const squaredArray = elementos3.map(p => p * p);
 console.log(squaredArray);
 
+
+
+//usando this en un objeto
+
+const objeto3 = {
+    name: 'Wilson',
+    age: 26,
+    university: 'MIT',
+    greet: function() {
+        console.log('The name is ' + this.name)
+    }
+}
+
+objeto3.greet()  // Imprime el nombre del objeto usando this
+
+objeto3.anadirEdad = function() {
+    this.age += 1;
+    console.log('The new age is ' + this.age);
+}
+
+objeto3.anadirEdad()  // Imprime la nueva edad del objeto usando this
+
+
+//Aprendiendo a usar clases
+
