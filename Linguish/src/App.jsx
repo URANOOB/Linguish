@@ -1,10 +1,8 @@
-function App() {
-  
-
+const App = () => {
   return (
     <>
-    <h1>Bienvenido a Linguish</h1>
-    <p>Aprende idiomas de manera divertida y efectiva.</p>
+      <h1>Linguish</h1>
+      <p>Welcome to Linguish, your language learning companion!</p>
     </>
   )
 }
