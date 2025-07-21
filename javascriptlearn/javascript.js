@@ -194,5 +194,11 @@ objeto3.anadirEdad = function() {
 objeto3.anadirEdad()  // Imprime la nueva edad del objeto usando this
 
 
-//Aprendiendo a usar clases
+const count = 8
+const character = "#"
+
+for (let i = character; i.length <= count; i += character) {
+    console.log(i)
+}
+
 
