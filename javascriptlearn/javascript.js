@@ -153,6 +153,7 @@ console.log(data);
 function suma (d, c) {
     return d + c;
 }
+
 const result = suma(15, 20);
 console.log(result);
 //Dos formas de hacer la misma suma, una con arrow function y otra con function declaration
