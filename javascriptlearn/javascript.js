@@ -76,7 +76,7 @@ const objeto1 = {
     name: 'Juan',
     age: 30,
     education: {
-        degree: 'Ingeniero',
+        degree: 'Ingenieroa',
         university: 'UNAM'
     }
 }
